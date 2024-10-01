@@ -27,8 +27,8 @@ const title_box_class = ref('w-screen pt-40 pb-48 px-8 lg:px-16 xl:px-36 2xl:px-
 <template>
     <header>
         <!-- <slot name="title_box" :title_box_class="title_box_class" :title_box_style="bg_img"></slot> -->
-        <div class="w-screen pt-40 pb-48 px-8 lg:px-16 xl:px-36 2xl:px-48 flex items-center bg-cover bg-center bg-green-500 text-white" :style="bg_img">
-            <div class="text-7xl lg:text-8xl font-bold font-display">
+        <div class="w-screen pt-36 pb-32 px-8 lg:px-16 xl:px-36 2xl:px-48 flex items-center bg-cover bg-center bg-green-500 text-white" :style="bg_img">
+            <div class="text-6xl lg:text-7xl font-bold font-display">
                 <slot name="title">This is title</slot>
             </div>
         </div>
@@ -47,7 +47,7 @@ const title_box_class = ref('w-screen pt-40 pb-48 px-8 lg:px-16 xl:px-36 2xl:px-
                     </div>
                 </div>
                 <div class="w-1/5 hidden lg:block" id="section">
-                    <div>
+                    <div style="position: sticky; top: 72px">
                         <slot name="side_bar" :h1_class="h1_class" :h2_class="h2_class" :h3_class="h3_class" :p_class="p_class">
                             <h1 :class="h1_class">this is h1</h1>
                             <h2 :class="h2_class">this is h2</h2>
@@ -62,7 +62,7 @@ const title_box_class = ref('w-screen pt-40 pb-48 px-8 lg:px-16 xl:px-36 2xl:px-
     <footer>
         <div class="w-full bg-gray-50 p-12" id="footer">
             <p :class="p_class">
-                Copyright 2024-2024 <span class='text-blue-500'>Artificial Intelligence</span> club of <span class="text-red-500">Beijing Academy</span> | Powerd by PASSION🔥 and LOVE❤.
+                © Copyright 2024-2024 <span class='text-blue-500'>Artificial Intelligence</span> club of <span class="text-red-500">Beijing Academy</span> | Powerd by PASSION🔥 and LOVE❤.
             </p>
         </div>
     </footer>

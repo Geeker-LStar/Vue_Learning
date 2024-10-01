@@ -25,8 +25,8 @@ const footer_content = ref('Copyright 2024-2024 Artificial Intelligence club of 
 
 <template>
     <header>
-        <div class="w-screen pt-32 pb-40 px-8 lg:px-16 xl:px-36 2xl:px-48 flex items-center bg-cover bg-center bg-pink-500 text-white" style="background-image: url(http://aiba.geekerlstar.com/AIBA/members.webp);">
-            <div class="text-4xl lg:text-5xl font-bold font-display">
+        <div class="w-screen pt-36 pb-32 px-8 lg:px-16 xl:px-36 2xl:px-48 flex items-center bg-cover bg-center bg-pink-500 text-white" style="background-image: url(http://aiba.geekerlstar.com/AIBA/members.webp);">
+            <div class="text-5xl lg:text-6xl font-bold font-display">
                 <slot name="title">This is title</slot>
             </div>
         </div>

@@ -9,7 +9,8 @@ document.title = title.value
 <template>
     <Pages>
         <template v-slot:title>Projects</template>
-        <template v-slot:content>this is about</template>
-        <template v-slot:side_bar>this is side_bar</template>
+        <template v-slot:content>
+        </template>
+        <template v-slot:side_bar></template>
     </Pages>
 </template>

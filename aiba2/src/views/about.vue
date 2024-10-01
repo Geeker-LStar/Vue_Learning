@@ -8,26 +8,38 @@ document.title = title.value
 </script>
 
 <template>
-    <Pages>
+    <Pages :bg_img="11">
         <template v-slot:title>About</template>
         <!-- <template v-slot:title_box="{ title_box_class, title_box_style }"></template> -->
         <template v-slot:content="{ h1_class, h2_class, h3_class, p_class }">
-            <p :class="p_class">In this page, we have...</p>
-            <h1 :class="h1_class">Abstract</h1>
-            <p :class="p_class">Our team utilized molecular docking technology to screen drugs from a drug library and validated the scientific accuracy of the wet lab screening results. At the same time, we integrated virtual screening with wet lab screening, conducting further analysis on the drugs that performed well. We ultimately proposed structural modifications for the drugs. The modified drugs achieved higher scores in molecular docking.
-            On this page, we will introduce the virtual screening (molecular docking) technique in detail and present the corresponding mathematical model. We will also describe the process and results of our computer simulation using this technique and illustrate the significance of our study.
-            LET'S GET START!!</p>
-            <h1 :class="h1_class">Introduction to Virtual Screening and Molecular Docking</h1>
-            <p :class="p_class">Drug virtual screening is a computational method used to identify potential drug candidates from large libraries of compounds. It involves simulating how small molecules, or ligands, interact with a biological target, such as a protein or enzyme, to predict their binding affinity and potential efficacy. The process typically begins with a target structure, often derived from experimental data or computational models. Virtual screening methods, including molecular docking, molecular dynamics simulations, and quantitative structure-activity relationship (QSAR) models, are employed to evaluate and rank compounds based on their predicted interactions with the target.
-            By using virtual screening, researchers can efficiently narrow down a vast number of compounds to those most likely to have therapeutic potential, thus accelerating the drug discovery process and reducing the need for extensive experimental testing. This approach facilitates the identification of promising candidates for further experimental validation and optimization.
-            Molecular docking, a key technique within this broader virtual screening framework, forecasts noncovalent interactions between macromolecules—typically between a macromolecule (receptor) and a smaller molecule (ligand). This process begins with their unbound forms, often derived from molecular dynamics simulations, homology modeling, or other methods, with the goal of determining bound conformations and estimating binding affinity.
-            The ability to predict how small molecules bind to proteins is especially valuable in drug discovery. It helps in screening virtual libraries of drug-like compounds to identify potential leads for development. Moreover, docking can estimate the bound conformations of known binders when experimental holo structures are not available. Integrating these approaches not only streamlines the identification of promising drug candidates but also enhances our understanding of their binding mechanisms and potential for structural optimization.
-            Furthermore, molecular docking provides valuable insights into potential modifications of drug candidates. By analyzing the predicted binding modes and interactions of ligands with the target, researchers can pinpoint regions where structural changes might improve binding affinity or selectivity. For example, docking results can indicate how altering certain chemical groups on a ligand could enhance its fit with the target’s binding site or minimize unwanted interactions. This information is crucial for guiding the design of optimized drug candidates with improved efficacy and fewer side effects.
-            </p>
+            <p :class="p_class">Hi!!! Finally, you're here!!</p>
+            <p :class="p_class">Welcome to AIBA, or <span class="text-blue-500">Artificial Intelligence</span> club of <span class="text-red-500">Beijing Academy</span>, for all students interested in mathematics or artificial intelligence!!</p>
+
+            <h1 :class="h1_class" id="what_aiba_is">What AIBA Is</h1>
+            <p :class="p_class">AIBA is a club focused on artificial intelligence and math, primarily through lectures and collaborative projects. AIBA has a well-structured curriculum and project planning, from beginner to advanced levels, covering theory and practice, and from proposing ideas to launching projects! Don't miss out!!</p>
+
+            <h1 :class="h1_class" id="q_and_a">You Might Be Wondering:</h1>
+            <h3 :class="h3_class">What if I don't have a computer science background? / What if I find it too difficult?</h3>
+            <p :class="p_class">— No worries! AIBA is very friendly to students with no foundation, as the curriculum starts from the basics of programming languages and gradually progresses. We adjust dynamically and tackle any difficulties together!</p>
+            <h3 :class="h3_class">What if I have some suggestions for the club's planning?</h3>
+            <p :class="p_class">— AIBA encourages freedom and diversity (which is also part of the spirit of the Internet). All ideas are welcome! We can explore a diverse club model together!</p>
+            <h3 :class="h3_class">I still have some questions / ideas...</h3>
+            <p :class="p_class">— Contact Us!! AIBA welcomes ALL questions / ideas!!</p>
+            <br>
+            <center>
+                <img id="poster" src="/src/images/pages/about/aiba_poster.jpg" alt="AIBA Poster Here!" class="w-3/4 lg:w-1/2"/>
+            </center>
+            <br>
+            <h1 :class="h1_class" id="welcome">In the end, AIBA welcomes you!!</h1>
+            <h1 :class="h1_class">Let's Explore Artificial Intelligence TOGETHER!!</h1>
         </template>
         <template v-slot:side_bar="{ h1_class, h2_class, h3_class, p_class }">
             <h3 :class="h3_class">On this page:</h3>
             <p :class="p_class">Introduction about AIBA!</p>
+            <a :class="p_class" href="#what_aiba_is">- What AIBA Is</a><br>
+            <a :class="p_class" href="#q_and_a">- You Might Be Wondering</a><br>
+            <a :class="p_class" href="#poster">- Our Poster</a><br>
+            <a :class="p_class" href="#welcome">- Welcome!</a>
         </template>
     </Pages>
 </template>

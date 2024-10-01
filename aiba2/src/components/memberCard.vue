@@ -23,8 +23,8 @@
             <center><slot name="name">this is your name</slot></center>
         </div>
         
-        <div class="px-10 pb-5">
-            <slot name="intro">this is your self-intro</slot>
+        <div class="px-10 pb-5 text-lg leading-10">
+            <center><slot name="intro">this is your self-intro</slot></center>
         </div>
     </div>
 </template>

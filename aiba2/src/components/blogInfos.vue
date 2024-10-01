@@ -2,7 +2,7 @@
 import {ref, reactive} from 'vue'
 
 export const blogsList = reactive([
-    {id: 1, path: '/blogs/240918', title: '20240918 first class', author: 'Tianxing Li', date: '2024-09-18', abstract: 'this is abs.this is abs.this is abs.this is abs.this is abs.this is abs.this is abs.this is abs.'},
-    {id: 2, path: '', title: '333', author: '', date: '', abstract: '4444'},
+    {id: 1, path: '/blogs/240918', title: 'First Class!🔥', author: 'Li Tianxiiiing⭐', date: '2024-09-18', 
+        abstract: 'We have had our first class on 09,18,2024!! Here are the whole process and my thoughts!'},
 ])
 </script>
