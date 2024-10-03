@@ -1,6 +1,6 @@
 <script>
 import {reactive, ref} from 'vue'
-const avatar_url = ref('/src/images/members/')
+const avatar_url = ref('/images/members/')
 
 export const membersList = reactive([
     {id: 1, name: 'Geeker LStar🔥', class: 'G10C1',
@@ -36,7 +36,7 @@ export const supportersList = reactive([
         intro: '介绍：一名非正式的社团成员，积极关注社团信息，对社团未来发展前景十分看好。相信其他成员相信社长，因为都太厉害了，十分崇拜所有本社团相关信息/事项。', 
         avatar: avatar_url.value + 'jiangbohan.jpg'},
     {id: 1, name: 'Dr.齐葩', class: 'undefined',
-        intro: 'this is self-intro. this is self-intro. this is self-intro.this is self-intro.this is self-intro.this is self-intro.this is self-intro.this is self-intro.this is self-intro.', 
+        intro: '一个非常爱改一堆群昵称的同学（）（后面这是社长写的）某些人对这个没有背景的效果情有独钟（（（', 
         avatar: avatar_url.value + 'liangxiuqi.jpg'},
         {id: 6, name: 'Yanjia Liu', 'intro': 'this is self-intro. this is self-intro. this is self-intro.this is self-intro.this is self-intro.this is self-intro.this is self-intro.this is self-intro.this is self-intro.', avatar: 'https://lstar.ltx1102.com/bg-01.jpg'},
         {id: 5, name: 'Eyjafjalla', class: 'undefined',

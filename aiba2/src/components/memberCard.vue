@@ -3,7 +3,7 @@
     const props = defineProps({
     avatar_link: {
         type: String,
-        default: 'https://lstar.ltx1102.com/bg-01.jpg',
+        default: '/images/members/default.jpg',
     },
     avatar_class: {
         type: String,
@@ -20,11 +20,11 @@
             </div>
         </div>
         <div class="text-3xl pt-8 px-10 pb-5 font-bold">
-            <center><slot name="name">this is your name</slot></center>
+            <slot name="name">this is your name</slot>
         </div>
         
         <div class="px-10 pb-5 text-lg leading-10">
-            <center><slot name="intro">this is your self-intro</slot></center>
+            <slot name="intro">this is your self-intro</slot>
         </div>
     </div>
 </template>

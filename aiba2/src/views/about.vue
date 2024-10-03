@@ -27,7 +27,7 @@ document.title = title.value
             <p :class="p_class">— Contact Us!! AIBA welcomes ALL questions / ideas!!</p>
             <br>
             <center>
-                <img id="poster" src="/src/images/pages/about/aiba_poster.jpg" alt="AIBA Poster Here!" class="w-3/4 lg:w-1/2"/>
+                <img id="poster" src="/images/pages/about/aiba_poster.jpg" alt="AIBA Poster Here!" class="w-3/4 lg:w-1/2"/>
             </center>
             <br>
             <h1 :class="h1_class" id="welcome">In the end, AIBA welcomes you!!</h1>

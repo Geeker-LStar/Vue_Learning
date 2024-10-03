@@ -1,5 +1,6 @@
 <script setup>
 import {ref, defineProps} from 'vue'
+// import Navigation_Bar from './navigation_bar.vue'
 
 const props = defineProps({
     h1_class: {
@@ -19,12 +20,14 @@ const props = defineProps({
         default: 'text-lg leading-10'
     }
 })
-const bg_img = ref('background-image: url(http://lstar.ltx1102.com/members.webp);')
+
+const bg_img = ref('background-image: url(/images/page_headers/members.webp);')
 const title_box_class = ref('w-screen pt-40 pb-48 px-8 lg:px-16 xl:px-36 2xl:px-48 flex items-center bg-cover bg-center bg-green-500 text-white')
 // const footer_content = ref('Copyright 2024-2024 <span class=\'text-blue-500\'>Artificial Intelligence</span> club of Beijing Academy | Powerd by PASSION🔥 and LOVE❤.')
 </script>
 
 <template>
+    <!-- <Navigation_Bar></Navigation_Bar> -->
     <header>
         <!-- <slot name="title_box" :title_box_class="title_box_class" :title_box_style="bg_img"></slot> -->
         <div class="w-screen pt-36 pb-32 px-8 lg:px-16 xl:px-36 2xl:px-48 flex items-center bg-cover bg-center bg-green-500 text-white" :style="bg_img">

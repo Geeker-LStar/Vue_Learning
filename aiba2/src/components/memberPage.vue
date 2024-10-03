@@ -25,7 +25,7 @@ const footer_content = ref('© Copyright 2024-2024 Artificial Intelligence club 
 
 <template>
     <header>
-        <div class="w-screen pt-36 pb-32 px-8 lg:px-16 xl:px-36 2xl:px-48 flex items-center bg-cover bg-center bg-green-500 text-white" style="background-image: url(http://lstar.ltx1102.com/members.webp);">
+        <div class="w-screen pt-36 pb-32 px-8 lg:px-16 xl:px-36 2xl:px-48 flex items-center bg-cover bg-center bg-green-500 text-white" style="background-image: url(/images/page_headers/members.webp);">
             <div class="text-6xl lg:text-7xl font-bold font-display">
                 <slot name="title">This is title</slot>
             </div>

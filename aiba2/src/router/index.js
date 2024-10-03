@@ -55,6 +55,10 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    // 每次路由切换时，返回顶部
+    return { top: 0 };
+  },
 });
 
 export default router;
